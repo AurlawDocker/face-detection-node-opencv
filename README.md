@@ -2,8 +2,7 @@
 
 Real-time face detection using OpenCV, Node.js, and WebSockets.
 
-Click [here](http://youtu.be/v2SY0naPBFw) to see it in action.
-
+Updated to use Browser webcam instead of opencv via node server. This will be eventually moved to a docker image
 ## Requirements
 
 * [Node.js](http://nodejs.org/)
