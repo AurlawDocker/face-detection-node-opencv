@@ -2,12 +2,14 @@
   "name": "edi-cam",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "express": "4.10.1",
     "morgan": "1.4.1",
-    "opencv": "git+https://github.com/peterbraden/node-opencv.git",
+    "node-gyp": "^3.5.0",
+    "node-pre-gyp": "^0.6.33",
+    "opencv": "peterbraden/node-opencv",
     "socket.io": "1.2.1"
   }
 }

@@ -1,0 +1,21 @@
+# https://docs.docker.com/compose/yml/
+#/dev/video0
+version: '2'
+services:
+  backend:
+    image: mgcrea/node-opencv:2.4.12
+    container_name: test_opencv
+    command: "npm start"
+    # command: "/usr/local/bin/npm install --verbose"
+    working_dir: /srv/node
+    environment:
+      - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/opencv/build/lib
+      - NODE_ENV=production
+    expose:
+      - "3000"
+    volumes:
+      - .:/srv/node
+      #- /usr/lib/beignet:/usr/lib/beignet:ro
+    devices:
+      #- "/dev/stdin:/dev/video0"
+      #- "/dev/dri/card0:/dev/dri/card0"

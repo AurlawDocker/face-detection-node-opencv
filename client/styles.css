@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-#canvas-video {
+#canvas-video, #videoElement, #target {
   width: 640px;
   height: 480px;
   border: 1px solid #ccc;

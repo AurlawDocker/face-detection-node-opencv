@@ -6,8 +6,16 @@
   <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
 <body>
+
   <div class="container center">
-    <canvas id="canvas-video" width="640" height="480"></canvas>
+    <div style="visibility: hidden;  width:0; height:0;">
+        <canvas id="canvas-video"></canvas>
+    </div>    
+    <div style="visibility: hidden;  width:0; height:0;">
+      <video autoplay="true" id="videoElement"></video>
+    </div>
+    <canvas id="target"></canvas>
+    <!--<img id="target"/>-->
   </div>
 
   <script src="/socket.io/socket.io.js"></script>

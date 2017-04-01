@@ -13,6 +13,7 @@ Click [here](http://youtu.be/v2SY0naPBFw) to see it in action.
 ## Installing Node.js packages
 
 * Navigate to the `server` directory
+* `npm i -g node-gyp node-pre-gyp`
 * To install the packages: `npm install`
 
 ## Running the demo
@@ -22,3 +23,4 @@ Click [here](http://youtu.be/v2SY0naPBFw) to see it in action.
 * To run the demo locally, open a browser and go to `localhost:8080`
 
 The app should be up and running!
+
