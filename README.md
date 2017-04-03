@@ -23,3 +23,10 @@ Updated to use Browser webcam instead of opencv via node server. This will be ev
 
 The app should be up and running!
 
+
+### Docker Version
+
+```
+$ docker-compose up
+```
+

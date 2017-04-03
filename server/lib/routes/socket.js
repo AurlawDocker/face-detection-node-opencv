@@ -20,7 +20,7 @@ module.exports = function (socket) {
     // console.log(data.length);
 
     cv.readImage(data, function(err, im) {
-      console.error(err);
+      if (err) throw err;
 
       im.detectObject('./node_modules/opencv/data/haarcascade_frontalface_alt2.xml', {}, function(e, faces) {
         if (e) throw e;
