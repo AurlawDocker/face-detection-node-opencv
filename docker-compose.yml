@@ -3,7 +3,7 @@
 version: '2'
 services:
   backend:
-    image: aurlaw/node-edge-opencv:2.4.12
+    image: aurlaw/docker-node-edge-opencv:latest
     container_name: node_opencv
     command: bash -c "npm install && npm start"
     # command: "/usr/local/bin/npm install --verbose"
